@@ -12,7 +12,6 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     background-color: black;
-    height: 100wh;
 }
 
 /* nav bar */
@@ -20,6 +19,7 @@ body {
 .nav-bar {
     position: relative;
     min-height: 35px;
+    height: 5vh;
 }
 
 .btn {
@@ -38,11 +38,15 @@ body {
 
 /* sezione principale */
 
+.main {
+    height: calc(84.4vh / 5);
+}
+
 .container-main {
-    padding: 0.5rem 3rem;
+    padding: 0.25rem 3rem;
     margin: auto;
     display: flex;
-    gap: 0.5rem;
+    gap: 0.3rem;
 }
 
 .user {
@@ -51,8 +55,8 @@ body {
 }
 
 .user img {
-    object-fit: cover;
-    width: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 .user .user-info {
@@ -63,4 +67,71 @@ body {
     font-size: 12px;
 }
 
+/* barra comandi */
+
+.setting-bar {
+    background-color: #222222;
+    height: 10vh;
+}
+
+.container-foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-set {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.foot-left {
+    display: flex;
+    gap: .5rem;
+    padding: 1rem 1rem;
+}
+
+.setting-bar .icon-set {
+    color: white;
+}
+
+.state-mic{
+    font-size: 12px;
+}
+
+.col i {
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.col-left {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.col.col-right i{
+    font-size: 12px;
+}
+
+.foot-center {
+    padding: 1rem 1rem;
+}
+
+.col.col-left.green {
+    color: #47c900;
+}
+
+.btn-end {
+    background-color: #4a4a4a;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.btn-end span {
+    color: red;
+    font-size: 12px;
+    padding: .5rem;
+
+}
 
